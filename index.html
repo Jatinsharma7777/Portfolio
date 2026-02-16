@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of a Senior Product Engineer at LINGO.DEV, Ex-Backend Developer at NVIDIA. Specializing in web development, backend systems, and open-source projects.">
+    <meta name="keywords"
+        content="Product Engineer, Backend Developer, NVIDIA, LINGO.DEV, Web Development, React, Node.js, Python">
+    <meta name="author" content="Senior Product Engineer">
+    <title>Portfolio | Senior Product Engineer @ LINGO.DEV</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 3D Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Portfolio</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#tech" class="nav-link">Tech Stack</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-container">
+                <div class="profile-glow"></div>
+                <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-img">
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Senior Product Engineer</span>
+                <span class="title-company">@ LINGO.DEV</span>
+            </h1>
+            <p class="hero-subtitle">Ex-Backend Developer @ NVIDIA</p>
+            <div class="hero-tags">
+                <span class="tag">Web Development</span>
+                <span class="tag">Backend Systems</span>
+                <span class="tag">Open Source</span>
+            </div>
+            <a href="#about" class="cta-button">
+                <span>Explore My Work</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10 4L10 16M10 16L16 10M10 16L4 10" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">💫 About Me</h2>
+            <div class="about-grid">
+                <div class="about-card glass-card">
+                    <div class="card-icon">🔭</div>
+                    <h3>Current Focus</h3>
+                    <p>I'm currently working on web development projects</p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Collaboration</h3>
+                    <p>I'm looking to collaborate on open-source projects</p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="card-icon">🧠</div>
+                    <h3>Learning</h3>
+                    <p>I'm looking for help with advanced JavaScript & backend concepts</p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Currently Learning</h3>
+                    <p>React, Node.js, and Git</p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="card-icon">💬</div>
+                    <h3>Ask Me About</h3>
+                    <p>HTML, Python</p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Fun Fact</h3>
+                    <p>I love learning by building projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item glass-card" data-animate>
+                    <div class="timeline-marker current"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">Current</span>
+                        <h3>Senior Product Engineer</h3>
+                        <h4>LINGO.DEV</h4>
+                        <p class="timeline-date">Present</p>
+                        <p>Leading product development initiatives, architecting scalable solutions, and driving
+                            innovation in web technologies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item glass-card" data-animate>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Backend Developer</h3>
+                        <h4>NVIDIA</h4>
+                        <p class="timeline-date">Previous</p>
+                        <p>Developed high-performance backend systems and AI-powered solutions:</p>
+                        <ul class="project-list">
+                            <li><strong>Personaplex.ai</strong> - Worked on NVIDIA's AI voice agent model, contributing
+                                to backend infrastructure and voice processing pipelines</li>
+                            <li><strong>Campus Mantri for Greeks</strong> - Built campus management system for Greek
+                                organizations, handling data architecture and backend services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech" class="tech-stack">
+        <div class="container">
+            <h2 class="section-title">💻 Tech Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-item glass-card" data-animate>
+                    <div class="tech-icon">☁️</div>
+                    <span>Google Cloud</span>
+                </div>
+                <div class="tech-item glass-card" data-animate>
+                    <div class="tech-icon">🔥</div>
+                    <span>Firebase</span>
+                </div>
+                <div class="tech-item glass-card" data-animate>
+                    <div class="tech-icon">📦</div>
+                    <span>OpenStack</span>
+                </div>
+                <div class="tech-item glass-card" data-animate>
+                    <div class="tech-icon">☕</div>
+                    <span>Java</span>
+                </div>
+                <div class="tech-item glass-card" data-animate>
+                    <div class="tech-icon">🦀</div>
+                    <span>Rust</span>
+                </div>
+                <div class="tech-item glass-card" data-animate>
+                    <div class="tech-icon">💻</div>
+                    <span>Windows Terminal</span>
+                </div>
+                <div class="tech-item glass-card" data-animate>
+                    <div class="tech-icon">🌿</div>
+                    <span>Git</span>
+                </div>
+                <div class="tech-item glass-card" data-animate>
+                    <div class="tech-icon">🐍</div>
+                    <span>Python</span>
+                </div>
+                <div class="tech-item glass-card" data-animate>
+                    <div class="tech-icon">⚡</div>
+                    <span>Next.js</span>
+                </div>
+                <div class="tech-item glass-card" data-animate>
+                    <div class="tech-icon">🟢</div>
+                    <span>Node.js</span>
+                </div>
+                <div class="tech-item glass-card" data-animate>
+                    <div class="tech-icon">⚛️</div>
+                    <span>React</span>
+                </div>
+                <div class="tech-item glass-card" data-animate>
+                    <div class="tech-icon">📝</div>
+                    <span>WordPress</span>
+                </div>
+                <div class="tech-item glass-card" data-animate>
+                    <div class="tech-icon">📦</div>
+                    <span>Webpack</span>
+                </div>
+                <div class="tech-item glass-card" data-animate>
+                    <div class="tech-icon">🐙</div>
+                    <span>GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">🌐 Connect With Me</h2>
+            <div class="social-grid">
+                <a href="https://discord.com/users/demonicc0704" target="_blank" rel="noopener noreferrer"
+                    class="social-card glass-card" data-animate>
+                    <div class="social-icon">💬</div>
+                    <span>Discord</span>
+                </a>
+                <a href="https://instagram.com/jatiinlifts" target="_blank" rel="noopener noreferrer"
+                    class="social-card glass-card" data-animate>
+                    <div class="social-icon">📸</div>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.linkedin.com/in/jatin-sharma-20171a33a/" target="_blank" rel="noopener noreferrer"
+                    class="social-card glass-card" data-animate>
+                    <div class="social-icon">💼</div>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Jatinsharma7777/jatinsharma7777" target="_blank" rel="noopener noreferrer"
+                    class="social-card glass-card" data-animate>
+                    <div class="social-icon">🐙</div>
+                    <span>GitHub</span>
+                </a>
+                <a href="#" class="social-card glass-card" data-animate>
+                    <div class="social-icon">📌</div>
+                    <span>Pinterest</span>
+                </a>
+                <a href="https://www.youtube.com/@DEMONIC_DETECTIVE" target="_blank" rel="noopener noreferrer"
+                    class="social-card glass-card" data-animate>
+                    <div class="social-icon">🎥</div>
+                    <span>YouTube</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Senior Product Engineer. Built with passion and Three.js</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
